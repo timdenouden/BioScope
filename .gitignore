@@ -19,11 +19,13 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+BioScope/opencv2.framework
 
 ## Other
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+*.DS_Store
 
 ### Xcode Patch ###
 *.xcodeproj/*
