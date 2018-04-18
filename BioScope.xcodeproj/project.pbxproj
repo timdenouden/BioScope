@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22066D351E9574F8008C2202 /* PhotoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22066D341E9574F8008C2202 /* PhotoCapture.swift */; };
+		220944861EF99D5D004FDF48 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220944851EF99D5D004FDF48 /* ImageUtils.swift */; };
+		22098BFE200C369700D2111C /* BioScope.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22098BFC200C369700D2111C /* BioScope.xcdatamodeld */; };
+		22098C01200C6A1400D2111C /* BottomTabBarSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22098C00200C6A1400D2111C /* BottomTabBarSheet.xib */; };
+		221EA3901F32BEBF004E5F22 /* DataLabelActionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221EA38F1F32BEBF004E5F22 /* DataLabelActionViewCell.swift */; };
+		222F660F1FB6A583002C7E4B /* BottomBarToolSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F660E1FB6A583002C7E4B /* BottomBarToolSelectView.swift */; };
+		222F66171FB6B5A9002C7E4B /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F66161FB6B5A9002C7E4B /* TagViewCell.swift */; };
+		223984EE1E5D306A00B38098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223984ED1E5D306A00B38098 /* AppDelegate.swift */; };
+		223984F31E5D306A00B38098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223984F11E5D306A00B38098 /* Main.storyboard */; settings = {ASSET_TAGS = ("preview View", ); }; };
+		223984F51E5D306A00B38098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223984F41E5D306A00B38098 /* Assets.xcassets */; };
+		223984F81E5D306A00B38098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223984F61E5D306A00B38098 /* LaunchScreen.storyboard */; };
+		223985031E5D306B00B38098 /* BioScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223985021E5D306B00B38098 /* BioScopeTests.swift */; };
+		2239850E1E5D306B00B38098 /* BioScopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2239850D1E5D306B00B38098 /* BioScopeUITests.swift */; };
+		2242DC041FAD26CA0002F60A /* NewMeasurementDataLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242DC031FAD26CA0002F60A /* NewMeasurementDataLabelViewController.swift */; };
+		2242DC0C1FAE26820002F60A /* CaputureDetailsEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2242DC0B1FAE26820002F60A /* CaputureDetailsEditTableViewController.swift */; };
+		22520D331E6CC7FD003F9CB0 /* CaptureViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22520D321E6CC7FD003F9CB0 /* CaptureViewCell.swift */; };
+		225DCCC81EAD527800C796D5 /* EditContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DCCC71EAD527800C796D5 /* EditContainerView.swift */; };
+		225DCCCA1EAE6B0E00C796D5 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DCCC91EAE6B0E00C796D5 /* PreviewViewController.swift */; };
+		225DCCCE1EAE7ABB00C796D5 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DCCCD1EAE7ABB00C796D5 /* FocusView.swift */; };
+		225DCCD21EAFCBE400C796D5 /* ModeToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225DCCD11EAFCBE400C796D5 /* ModeToggleView.swift */; };
+		228D278F1F90A12500F5BF0A /* CaptureDetailsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D278E1F90A12500F5BF0A /* CaptureDetailsCollectionViewController.swift */; };
+		228D27911F912FAB00F5BF0A /* CaptureDetailsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228D27901F912FAB00F5BF0A /* CaptureDetailsCollectionReusableView.swift */; };
+		229099001E79BC550019C900 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229098FF1E79BC550019C900 /* opencv2.framework */; };
+		2290990E1E79C6CD0019C900 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2290990D1E79C6CD0019C900 /* OpenCVWrapper.mm */; };
+		229099121E7F00D90019C900 /* MarkupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229099111E7F00D90019C900 /* MarkupViewController.swift */; };
+		229099141E7F01B10019C900 /* PhotoCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229099131E7F01B10019C900 /* PhotoCaptureView.swift */; };
+		22A435881EF99106003C36A0 /* CaptureStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A435871EF99106003C36A0 /* CaptureStorageManager.swift */; };
+		22A4358A1EF99204003C36A0 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A435891EF99204003C36A0 /* Capture.swift */; };
+		22A4D6291F19933100E20D63 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A4D6281F19933100E20D63 /* Label.swift */; };
+		22C549C81F086D530047F3A6 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C549C71F086D530047F3A6 /* BrowseViewController.swift */; };
+		22E761791F23D34A005E99C7 /* DataLabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E761781F23D34A005E99C7 /* DataLabelViewCell.swift */; };
+		22E761831F23D542005E99C7 /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E761821F23D542005E99C7 /* CaptureViewController.swift */; };
+		22E761851F23D900005E99C7 /* DataLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E761841F23D900005E99C7 /* DataLabel.swift */; };
+		22E761871F23D9AF005E99C7 /* MeasurementDataLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E761861F23D9AF005E99C7 /* MeasurementDataLabel.swift */; };
+		22E761961F27B24B005E99C7 /* NewDataLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E761951F27B24B005E99C7 /* NewDataLabelViewController.swift */; };
+		43DBB03C8AD31177240E7867 /* Pods_BioScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739BE32C198617D71836B2BC /* Pods_BioScope.framework */; };
+		7E7E312A52A054F0099C02D6 /* Pods_BioScopeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44665BDE632DF39A8BB52443 /* Pods_BioScopeUITests.framework */; };
+		DAF1A048998EB7404A929429 /* Pods_BioScopeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 718F7926FDFEE3493F9BF64C /* Pods_BioScopeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		223984FF1E5D306B00B38098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223984E21E5D306A00B38098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223984E91E5D306A00B38098;
+			remoteInfo = BioScope;
+		};
+		2239850A1E5D306B00B38098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223984E21E5D306A00B38098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223984E91E5D306A00B38098;
+			remoteInfo = BioScope;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22C549C61F086CE40047F3A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12B25FEC32C861FCBEE7C921 /* Pods-BioScopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScopeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BioScopeTests/Pods-BioScopeTests.release.xcconfig"; sourceTree = "<group>"; };
+		22066D341E9574F8008C2202 /* PhotoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCapture.swift; sourceTree = "<group>"; };
+		220944851EF99D5D004FDF48 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		22098BFD200C369700D2111C /* BioScope.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BioScope.xcdatamodel; sourceTree = "<group>"; };
+		22098C00200C6A1400D2111C /* BottomTabBarSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomTabBarSheet.xib; sourceTree = "<group>"; };
+		221EA38F1F32BEBF004E5F22 /* DataLabelActionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLabelActionViewCell.swift; sourceTree = "<group>"; };
+		222F660E1FB6A583002C7E4B /* BottomBarToolSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarToolSelectView.swift; sourceTree = "<group>"; };
+		222F66161FB6B5A9002C7E4B /* TagViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
+		223984EA1E5D306A00B38098 /* BioScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		223984ED1E5D306A00B38098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		223984F21E5D306A00B38098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		223984F41E5D306A00B38098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		223984F71E5D306A00B38098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		223984F91E5D306A00B38098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223984FE1E5D306B00B38098 /* BioScopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioScopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		223985021E5D306B00B38098 /* BioScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScopeTests.swift; sourceTree = "<group>"; };
+		223985041E5D306B00B38098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223985091E5D306B00B38098 /* BioScopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BioScopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2239850D1E5D306B00B38098 /* BioScopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioScopeUITests.swift; sourceTree = "<group>"; };
+		2239850F1E5D306B00B38098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2242DC031FAD26CA0002F60A /* NewMeasurementDataLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementDataLabelViewController.swift; sourceTree = "<group>"; };
+		2242DC0B1FAE26820002F60A /* CaputureDetailsEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaputureDetailsEditTableViewController.swift; sourceTree = "<group>"; };
+		22520D321E6CC7FD003F9CB0 /* CaptureViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewCell.swift; sourceTree = "<group>"; };
+		225DCCC71EAD527800C796D5 /* EditContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditContainerView.swift; sourceTree = "<group>"; };
+		225DCCC91EAE6B0E00C796D5 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		225DCCCD1EAE7ABB00C796D5 /* FocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		225DCCD11EAFCBE400C796D5 /* ModeToggleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeToggleView.swift; sourceTree = "<group>"; };
+		228D278E1F90A12500F5BF0A /* CaptureDetailsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDetailsCollectionViewController.swift; sourceTree = "<group>"; };
+		228D27901F912FAB00F5BF0A /* CaptureDetailsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDetailsCollectionReusableView.swift; sourceTree = "<group>"; };
+		229098FF1E79BC550019C900 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		229099071E79C6250019C900 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		2290990C1E79C6CD0019C900 /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		2290990D1E79C6CD0019C900 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		229099101E79CC560019C900 /* Bioscope-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bioscope-Bridging-Header.h"; sourceTree = "<group>"; };
+		229099111E7F00D90019C900 /* MarkupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkupViewController.swift; sourceTree = "<group>"; };
+		229099131E7F01B10019C900 /* PhotoCaptureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureView.swift; sourceTree = "<group>"; };
+		22A435871EF99106003C36A0 /* CaptureStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureStorageManager.swift; sourceTree = "<group>"; };
+		22A435891EF99204003C36A0 /* Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		22A4D6281F19933100E20D63 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		22C549C71F086D530047F3A6 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		22E761781F23D34A005E99C7 /* DataLabelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLabelViewCell.swift; sourceTree = "<group>"; };
+		22E761821F23D542005E99C7 /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		22E761841F23D900005E99C7 /* DataLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLabel.swift; sourceTree = "<group>"; };
+		22E761861F23D9AF005E99C7 /* MeasurementDataLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementDataLabel.swift; sourceTree = "<group>"; };
+		22E761951F27B24B005E99C7 /* NewDataLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDataLabelViewController.swift; sourceTree = "<group>"; };
+		44665BDE632DF39A8BB52443 /* Pods_BioScopeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioScopeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		718F7926FDFEE3493F9BF64C /* Pods_BioScopeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioScopeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		739BE32C198617D71836B2BC /* Pods_BioScope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioScope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		803B5C38F3497A31847B4282 /* Pods-BioScopeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScopeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BioScopeUITests/Pods-BioScopeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9084A6D2B210FF19338D7BED /* Pods-BioScopeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScopeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BioScopeTests/Pods-BioScopeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		937EFD0DFCA1958651E95AC1 /* Pods-BioScope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScope.release.xcconfig"; path = "Pods/Target Support Files/Pods-BioScope/Pods-BioScope.release.xcconfig"; sourceTree = "<group>"; };
+		98031C5A4F6A1AC5E2B0DCA1 /* Pods-BioScopeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScopeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BioScopeUITests/Pods-BioScopeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F7B9A0B3E762C03118D2496 /* Pods-BioScope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioScope.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BioScope/Pods-BioScope.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		223984E71E5D306A00B38098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229099001E79BC550019C900 /* opencv2.framework in Frameworks */,
+				43DBB03C8AD31177240E7867 /* Pods_BioScope.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223984FB1E5D306B00B38098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF1A048998EB7404A929429 /* Pods_BioScopeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223985061E5D306B00B38098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7E312A52A054F0099C02D6 /* Pods_BioScopeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220944841EF99D40004FDF48 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				220944851EF99D5D004FDF48 /* ImageUtils.swift */,
+				22A435871EF99106003C36A0 /* CaptureStorageManager.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		22098BFF200C36C900D2111C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				22C549C71F086D530047F3A6 /* BrowseViewController.swift */,
+				225DCCC91EAE6B0E00C796D5 /* PreviewViewController.swift */,
+				22E761821F23D542005E99C7 /* CaptureViewController.swift */,
+				228D278E1F90A12500F5BF0A /* CaptureDetailsCollectionViewController.swift */,
+				2242DC0B1FAE26820002F60A /* CaputureDetailsEditTableViewController.swift */,
+				22E761951F27B24B005E99C7 /* NewDataLabelViewController.swift */,
+				2242DC031FAD26CA0002F60A /* NewMeasurementDataLabelViewController.swift */,
+				229099111E7F00D90019C900 /* MarkupViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		223984E11E5D306A00B38098 = {
+			isa = PBXGroup;
+			children = (
+				223984EC1E5D306A00B38098 /* BioScope */,
+				223985011E5D306B00B38098 /* BioScopeTests */,
+				2239850C1E5D306B00B38098 /* BioScopeUITests */,
+				223984EB1E5D306A00B38098 /* Products */,
+				229098FE1E79BC540019C900 /* Frameworks */,
+				528ACA32D7F9F9FFEFE3BBF1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		223984EB1E5D306A00B38098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				223984EA1E5D306A00B38098 /* BioScope.app */,
+				223984FE1E5D306B00B38098 /* BioScopeTests.xctest */,
+				223985091E5D306B00B38098 /* BioScopeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		223984EC1E5D306A00B38098 /* BioScope */ = {
+			isa = PBXGroup;
+			children = (
+				22098BFF200C36C900D2111C /* controller */,
+				220944841EF99D40004FDF48 /* utils */,
+				225DCCC41EAD34E300C796D5 /* filter */,
+				225DCCC31EAD34B100C796D5 /* model */,
+				225DCCC21EAD347500C796D5 /* view */,
+				229099071E79C6250019C900 /* opencv2.framework */,
+				223984ED1E5D306A00B38098 /* AppDelegate.swift */,
+				223984F91E5D306A00B38098 /* Info.plist */,
+				22098BFC200C369700D2111C /* BioScope.xcdatamodeld */,
+				223984F41E5D306A00B38098 /* Assets.xcassets */,
+			);
+			path = BioScope;
+			sourceTree = "<group>";
+		};
+		223985011E5D306B00B38098 /* BioScopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				223985021E5D306B00B38098 /* BioScopeTests.swift */,
+				223985041E5D306B00B38098 /* Info.plist */,
+			);
+			path = BioScopeTests;
+			sourceTree = "<group>";
+		};
+		2239850C1E5D306B00B38098 /* BioScopeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2239850D1E5D306B00B38098 /* BioScopeUITests.swift */,
+				2239850F1E5D306B00B38098 /* Info.plist */,
+			);
+			path = BioScopeUITests;
+			sourceTree = "<group>";
+		};
+		225DCCC21EAD347500C796D5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				22520D321E6CC7FD003F9CB0 /* CaptureViewCell.swift */,
+				229099131E7F01B10019C900 /* PhotoCaptureView.swift */,
+				225DCCC71EAD527800C796D5 /* EditContainerView.swift */,
+				225DCCCD1EAE7ABB00C796D5 /* FocusView.swift */,
+				225DCCD11EAFCBE400C796D5 /* ModeToggleView.swift */,
+				22E761781F23D34A005E99C7 /* DataLabelViewCell.swift */,
+				221EA38F1F32BEBF004E5F22 /* DataLabelActionViewCell.swift */,
+				228D27901F912FAB00F5BF0A /* CaptureDetailsCollectionReusableView.swift */,
+				222F660E1FB6A583002C7E4B /* BottomBarToolSelectView.swift */,
+				222F66161FB6B5A9002C7E4B /* TagViewCell.swift */,
+				223984F61E5D306A00B38098 /* LaunchScreen.storyboard */,
+				223984F11E5D306A00B38098 /* Main.storyboard */,
+				22098C00200C6A1400D2111C /* BottomTabBarSheet.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		225DCCC31EAD34B100C796D5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				22066D341E9574F8008C2202 /* PhotoCapture.swift */,
+				22A435891EF99204003C36A0 /* Capture.swift */,
+				22A4D6281F19933100E20D63 /* Label.swift */,
+				22E761841F23D900005E99C7 /* DataLabel.swift */,
+				22E761861F23D9AF005E99C7 /* MeasurementDataLabel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		225DCCC41EAD34E300C796D5 /* filter */ = {
+			isa = PBXGroup;
+			children = (
+				2290990C1E79C6CD0019C900 /* OpenCVWrapper.h */,
+				2290990D1E79C6CD0019C900 /* OpenCVWrapper.mm */,
+				229099101E79CC560019C900 /* Bioscope-Bridging-Header.h */,
+			);
+			name = filter;
+			sourceTree = "<group>";
+		};
+		229098FE1E79BC540019C900 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				229098FF1E79BC550019C900 /* opencv2.framework */,
+				739BE32C198617D71836B2BC /* Pods_BioScope.framework */,
+				718F7926FDFEE3493F9BF64C /* Pods_BioScopeTests.framework */,
+				44665BDE632DF39A8BB52443 /* Pods_BioScopeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528ACA32D7F9F9FFEFE3BBF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F7B9A0B3E762C03118D2496 /* Pods-BioScope.debug.xcconfig */,
+				937EFD0DFCA1958651E95AC1 /* Pods-BioScope.release.xcconfig */,
+				9084A6D2B210FF19338D7BED /* Pods-BioScopeTests.debug.xcconfig */,
+				12B25FEC32C861FCBEE7C921 /* Pods-BioScopeTests.release.xcconfig */,
+				803B5C38F3497A31847B4282 /* Pods-BioScopeUITests.debug.xcconfig */,
+				98031C5A4F6A1AC5E2B0DCA1 /* Pods-BioScopeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		223984E91E5D306A00B38098 /* BioScope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223985121E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScope" */;
+			buildPhases = (
+				0125E7BD0E81A6A60B45C5D7 /* [CP] Check Pods Manifest.lock */,
+				223984E61E5D306A00B38098 /* Sources */,
+				223984E71E5D306A00B38098 /* Frameworks */,
+				223984E81E5D306A00B38098 /* Resources */,
+				22C549C61F086CE40047F3A6 /* Embed Frameworks */,
+				6C4D6CA18E06620586511CEF /* [CP] Embed Pods Frameworks */,
+				3E6944CDA43AC6858A8D39EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioScope;
+			productName = BioScope;
+			productReference = 223984EA1E5D306A00B38098 /* BioScope.app */;
+			productType = "com.apple.product-type.application";
+		};
+		223984FD1E5D306B00B38098 /* BioScopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223985151E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScopeTests" */;
+			buildPhases = (
+				BF76A244FD25EDCED7D6B894 /* [CP] Check Pods Manifest.lock */,
+				223984FA1E5D306B00B38098 /* Sources */,
+				223984FB1E5D306B00B38098 /* Frameworks */,
+				223984FC1E5D306B00B38098 /* Resources */,
+				EE06E18EDE9F7F2623C4A163 /* [CP] Embed Pods Frameworks */,
+				1DA2E0C033C147C9FB410B10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				223985001E5D306B00B38098 /* PBXTargetDependency */,
+			);
+			name = BioScopeTests;
+			productName = BioScopeTests;
+			productReference = 223984FE1E5D306B00B38098 /* BioScopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		223985081E5D306B00B38098 /* BioScopeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223985181E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScopeUITests" */;
+			buildPhases = (
+				D8888B937AA6FB0A74D53466 /* [CP] Check Pods Manifest.lock */,
+				223985051E5D306B00B38098 /* Sources */,
+				223985061E5D306B00B38098 /* Frameworks */,
+				223985071E5D306B00B38098 /* Resources */,
+				C5FE8FED4739D211254C6A07 /* [CP] Embed Pods Frameworks */,
+				46B0F2714B5709FF797E0B47 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2239850B1E5D306B00B38098 /* PBXTargetDependency */,
+			);
+			name = BioScopeUITests;
+			productName = BioScopeUITests;
+			productReference = 223985091E5D306B00B38098 /* BioScopeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		223984E21E5D306A00B38098 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					"preview View",
+				);
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Timothy DenOuden";
+				TargetAttributes = {
+					223984E91E5D306A00B38098 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CY3XZ54RTM;
+						LastSwiftMigration = 0920;
+					};
+					223984FD1E5D306B00B38098 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0920;
+						TestTargetID = 223984E91E5D306A00B38098;
+					};
+					223985081E5D306B00B38098 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0920;
+						TestTargetID = 223984E91E5D306A00B38098;
+					};
+				};
+			};
+			buildConfigurationList = 223984E51E5D306A00B38098 /* Build configuration list for PBXProject "BioScope" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 223984E11E5D306A00B38098;
+			productRefGroup = 223984EB1E5D306A00B38098 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				223984E91E5D306A00B38098 /* BioScope */,
+				223984FD1E5D306B00B38098 /* BioScopeTests */,
+				223985081E5D306B00B38098 /* BioScopeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		223984E81E5D306A00B38098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22098C01200C6A1400D2111C /* BottomTabBarSheet.xib in Resources */,
+				223984F81E5D306A00B38098 /* LaunchScreen.storyboard in Resources */,
+				223984F51E5D306A00B38098 /* Assets.xcassets in Resources */,
+				223984F31E5D306A00B38098 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223984FC1E5D306B00B38098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223985071E5D306B00B38098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0125E7BD0E81A6A60B45C5D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioScope-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DA2E0C033C147C9FB410B10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScopeTests/Pods-BioScopeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6944CDA43AC6858A8D39EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScope/Pods-BioScope-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B0F2714B5709FF797E0B47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScopeUITests/Pods-BioScopeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C4D6CA18E06620586511CEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BioScope/Pods-BioScope-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/VerticalSlider/VerticalSlider.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VerticalSlider.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScope/Pods-BioScope-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF76A244FD25EDCED7D6B894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioScopeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FE8FED4739D211254C6A07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScopeUITests/Pods-BioScopeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8888B937AA6FB0A74D53466 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioScopeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE06E18EDE9F7F2623C4A163 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BioScopeTests/Pods-BioScopeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		223984E61E5D306A00B38098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225DCCD21EAFCBE400C796D5 /* ModeToggleView.swift in Sources */,
+				22E761831F23D542005E99C7 /* CaptureViewController.swift in Sources */,
+				22520D331E6CC7FD003F9CB0 /* CaptureViewCell.swift in Sources */,
+				228D278F1F90A12500F5BF0A /* CaptureDetailsCollectionViewController.swift in Sources */,
+				2242DC0C1FAE26820002F60A /* CaputureDetailsEditTableViewController.swift in Sources */,
+				221EA3901F32BEBF004E5F22 /* DataLabelActionViewCell.swift in Sources */,
+				22A435881EF99106003C36A0 /* CaptureStorageManager.swift in Sources */,
+				228D27911F912FAB00F5BF0A /* CaptureDetailsCollectionReusableView.swift in Sources */,
+				2242DC041FAD26CA0002F60A /* NewMeasurementDataLabelViewController.swift in Sources */,
+				22A4358A1EF99204003C36A0 /* Capture.swift in Sources */,
+				225DCCC81EAD527800C796D5 /* EditContainerView.swift in Sources */,
+				229099141E7F01B10019C900 /* PhotoCaptureView.swift in Sources */,
+				22E761791F23D34A005E99C7 /* DataLabelViewCell.swift in Sources */,
+				225DCCCA1EAE6B0E00C796D5 /* PreviewViewController.swift in Sources */,
+				225DCCCE1EAE7ABB00C796D5 /* FocusView.swift in Sources */,
+				22A4D6291F19933100E20D63 /* Label.swift in Sources */,
+				220944861EF99D5D004FDF48 /* ImageUtils.swift in Sources */,
+				22066D351E9574F8008C2202 /* PhotoCapture.swift in Sources */,
+				22E761851F23D900005E99C7 /* DataLabel.swift in Sources */,
+				222F66171FB6B5A9002C7E4B /* TagViewCell.swift in Sources */,
+				222F660F1FB6A583002C7E4B /* BottomBarToolSelectView.swift in Sources */,
+				2290990E1E79C6CD0019C900 /* OpenCVWrapper.mm in Sources */,
+				22C549C81F086D530047F3A6 /* BrowseViewController.swift in Sources */,
+				229099121E7F00D90019C900 /* MarkupViewController.swift in Sources */,
+				22E761871F23D9AF005E99C7 /* MeasurementDataLabel.swift in Sources */,
+				22098BFE200C369700D2111C /* BioScope.xcdatamodeld in Sources */,
+				22E761961F27B24B005E99C7 /* NewDataLabelViewController.swift in Sources */,
+				223984EE1E5D306A00B38098 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223984FA1E5D306B00B38098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223985031E5D306B00B38098 /* BioScopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223985051E5D306B00B38098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2239850E1E5D306B00B38098 /* BioScopeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		223985001E5D306B00B38098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223984E91E5D306A00B38098 /* BioScope */;
+			targetProxy = 223984FF1E5D306B00B38098 /* PBXContainerItemProxy */;
+		};
+		2239850B1E5D306B00B38098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223984E91E5D306A00B38098 /* BioScope */;
+			targetProxy = 2239850A1E5D306B00B38098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		223984F11E5D306A00B38098 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223984F21E5D306A00B38098 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		223984F61E5D306A00B38098 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223984F71E5D306A00B38098 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		223985101E5D306B00B38098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		223985111E5D306B00B38098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		223985131E5D306B00B38098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F7B9A0B3E762C03118D2496 /* Pods-BioScope.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BioScope",
+				);
+				INFOPLIST_FILE = BioScope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.timothy.denouden.bioscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BioScope/BioScope-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		223985141E5D306B00B38098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 937EFD0DFCA1958651E95AC1 /* Pods-BioScope.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = CY3XZ54RTM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BioScope",
+				);
+				INFOPLIST_FILE = BioScope/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.timothy.denouden.bioscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BioScope/BioScope-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		223985161E5D306B00B38098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9084A6D2B210FF19338D7BED /* Pods-BioScopeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BioScopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Timothy.DenOuden.BioScopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioScope.app/BioScope";
+			};
+			name = Debug;
+		};
+		223985171E5D306B00B38098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12B25FEC32C861FCBEE7C921 /* Pods-BioScopeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BioScopeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Timothy.DenOuden.BioScopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioScope.app/BioScope";
+			};
+			name = Release;
+		};
+		223985191E5D306B00B38098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803B5C38F3497A31847B4282 /* Pods-BioScopeUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BioScopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Timothy.DenOuden.BioScopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = BioScope;
+			};
+			name = Debug;
+		};
+		2239851A1E5D306B00B38098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98031C5A4F6A1AC5E2B0DCA1 /* Pods-BioScopeUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = BioScopeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Timothy.DenOuden.BioScopeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = BioScope;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		223984E51E5D306A00B38098 /* Build configuration list for PBXProject "BioScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223985101E5D306B00B38098 /* Debug */,
+				223985111E5D306B00B38098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223985121E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223985131E5D306B00B38098 /* Debug */,
+				223985141E5D306B00B38098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223985151E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223985161E5D306B00B38098 /* Debug */,
+				223985171E5D306B00B38098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223985181E5D306B00B38098 /* Build configuration list for PBXNativeTarget "BioScopeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223985191E5D306B00B38098 /* Debug */,
+				2239851A1E5D306B00B38098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22098BFC200C369700D2111C /* BioScope.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22098BFD200C369700D2111C /* BioScope.xcdatamodel */,
+			);
+			currentVersion = 22098BFD200C369700D2111C /* BioScope.xcdatamodel */;
+			path = BioScope.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 223984E21E5D306A00B38098 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_BioScopeUITests {
+  umbrella header "Pods-BioScopeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
